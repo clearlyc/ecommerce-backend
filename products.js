@@ -119,6 +119,16 @@ const products = [
     stock: 9,
     year: 2024,
   },
+  {
+    model: "Audi-100CoupeS",
+    description:
+      "It is a two-door coupé with a fastback design and a front-engine, front-wheel-drive layout.",
+    image: "/img/Audi/Audi-100CoupeS.png",
+    featured: true,
+    price: 37000,
+    stock: 5,
+    year: 1969,
+  },
 ];
 
 module.exports = products;
