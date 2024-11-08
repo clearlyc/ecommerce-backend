@@ -4,7 +4,7 @@ const products = [
     description:
       "A two-door, four-seat sports coupe with a 5.0-liter V8 engine that produces 460 horsepower and 420 pound-feet of torque",
     image: "/img/Ford/Ford-Mustang.png",
-    featured: true,
+    featured: false,
     price: 40000,
     stock: 5,
     year: 2018,
@@ -44,7 +44,7 @@ const products = [
     description:
       "Designed by the Ferrari Styling Centre under the direction of Flavio Manzoni, Chief Design Officer, is a two-seater sports berlinetta developed on the F8 Tributo platform.",
     image: "/img/Ferrari/Ferrari-SP48Unica.png",
-    featured: true,
+    featured: false,
     price: 250000,
     stock: 3,
     year: 2022,
@@ -54,7 +54,7 @@ const products = [
     description:
       "Twin-turbo engine, use of special materials, Pininfarina styling. The first production model with the features of a racing car. The Ferrari GTO",
     image: "/img/Ferrari/Ferrari-GTO.png",
-    featured: false,
+    featured: true,
     price: 3250000,
     stock: 2,
     year: 1984,
@@ -84,7 +84,7 @@ const products = [
     description:
       "Flat body, sculptural styling, closed design — the exterior design of the Mission X is both innovative and distinctively Porsche. From the light structure and Le-Mans-style doors to the integrated, adaptive wings.",
     image: "/img/Porsche/Porsche-MissionX.png",
-    featured: true,
+    featured: false,
     price: 1850000,
     stock: 3,
     year: 2023,
@@ -120,7 +120,7 @@ const products = [
     year: 2024,
   },
   {
-    model: "Audi-100CoupeS",
+    model: "100 Coupe S",
     description:
       "It is a two-door coupé with a fastback design and a front-engine, front-wheel-drive layout.",
     image: "/img/Audi/Audi-100CoupeS.png",
@@ -128,6 +128,26 @@ const products = [
     price: 37000,
     stock: 5,
     year: 1969,
+  },
+  {
+    model: "Ford Gt Limited",
+    description:
+      "This model was built to honor Ford's 2016 Le Mans win and the 1966 podium sweep. It features a 3.5-liter EcoBoost V6 engine, 660 horsepower, and a top speed of 216 mph.",
+    image: "/img/Ford/Ford-GtLimitedEdition.png",
+    featured: true,
+    price: 1700000,
+    stock: 4,
+    year: 2022,
+  },
+  {
+    model: "Carrera GTS",
+    description:
+      "The 1964 Porsche 904 Carrera GTS is a sports car with a glass fiber body and a steel chassis, and is known for its durability and performance.",
+    image: "/img/Porsche/Porsche-1964-CarreraGTS.png",
+    featured: true,
+    price: 2535000,
+    stock: 10,
+    year: 1964,
   },
 ];
 
