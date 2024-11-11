@@ -19,11 +19,12 @@ class Product extends Model {
           type: DataTypes.TEXT,
         },
         image: {
-          type:DataTypes.STRING,
+          type: DataTypes.STRING,
         },
-        // photos: {
-        //   type: DataTypes.ARRAY(DataTypes.STRING),
-        // },
+        photos: {
+          type: DataTypes.JSON,
+          defaultValue: [],
+        },
         featured: {
           type: DataTypes.BOOLEAN,
         },
@@ -33,9 +34,9 @@ class Product extends Model {
         stock: {
           type: DataTypes.INTEGER,
         },
-        year:{
+        year: {
           type: DataTypes.INTEGER,
-        }
+        },
       },
       {
         sequelize,

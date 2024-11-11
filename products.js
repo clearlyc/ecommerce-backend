@@ -149,6 +149,23 @@ const products = [
     stock: 10,
     year: 1964,
   },
+  {
+    model: "Aventador Ultimae",
+    description:
+      "The Lamborghini Aventador Ultimae is a mid-engine, all-wheel-drive, two-door coupe super sports car with a V12 engine.",
+    image: "/img/Lambo/Aventador_Ultimae/lambo-aventador-left.png",
+    photos: [
+      "/img/Lambo/Aventador_Ultimae/lambo-aventador-back.png",
+      "/img/Lambo/Aventador_Ultimae/lambo-aventador-right.png",
+      "/img/Lambo/Aventador_Ultimae/lambo-aventador-left.png",
+      "/img/Lambo/Aventador_Ultimae/lambo-aventador-driving.png",
+      "/img/Lambo/Aventador_Ultimae/lambo-aventador-wheel.png",
+    ],
+    featured: false,
+    price: 860000,
+    stock: 3,
+    year: 2022,
+  },
 ];
 
 module.exports = products;

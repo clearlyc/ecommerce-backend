@@ -5,7 +5,6 @@
 
 const userRoutes = require("./userRoutes");
 const productRoutes = require("./productRoutes");
-const exampleRoutes = require("./exampleRoutes");
 
 module.exports = (app) => {
   /*
@@ -20,5 +19,4 @@ module.exports = (app) => {
    */
   app.use("/users", userRoutes);
   app.use("/products", productRoutes);
-  app.use("/examples", exampleRoutes);
 };
