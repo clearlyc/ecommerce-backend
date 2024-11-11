@@ -130,7 +130,7 @@ const products = [
     year: 1969,
   },
   {
-    model: "Ford Gt Limited",
+    model: "Gt Limited",
     description:
       "This model was built to honor Ford's 2016 Le Mans win and the 1966 podium sweep. It features a 3.5-liter EcoBoost V6 engine, 660 horsepower, and a top speed of 216 mph.",
     image: "/img/Ford/Ford-GtLimitedEdition.png",
