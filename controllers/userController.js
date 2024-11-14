@@ -27,7 +27,8 @@ async function store(req, res) {
       email,
       password,
     });
-    return res.status(200).json(user);
+    const userNoPassword = {firstname, lastname, phone, email}
+    return res.status(200).json(userNoPassword);
   } catch (err) {
     console.error(err);
   }
