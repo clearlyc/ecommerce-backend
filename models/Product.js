@@ -18,6 +18,9 @@ class Product extends Model {
         description: {
           type: DataTypes.TEXT,
         },
+        imageProduct: {
+          type: DataTypes.STRING,
+        },
         image: {
           type: DataTypes.STRING,
         },
