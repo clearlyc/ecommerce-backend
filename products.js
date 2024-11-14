@@ -10,12 +10,12 @@ const products = [
     year: 2018,
   },
   {
-    model: "MANSORY Stallone 812",
+    model: "SF90 Stradale",
     description:
-      "A stellar car with a strong name meet MANSORY Stallone, based on Ferrari 812 Superfast. The third generation of a fully refined Ferrari gran turismo is defined by lightweight bodywork components made of visible carbon fibre and several engine modifications, making this stallion an untamed beast.",
-    image: "/img/Ferrari/Ferrari-Stallone.png",
+      "The car's name encapsulates the true significance of all that has been achieved in terms of performance. The reference to the 90th anniversary of the foundation of Scuderia Ferrari underscores the strong link that has always existed between Ferrari’s track and road cars.",
+    image: "/img/Ferrari/sf90-stradale/ferrari-sf90-1.jpg",
     featured: false,
-    price: 899998,
+    price: 700000,
     stock: 5,
     year: 2020,
   },
@@ -23,7 +23,7 @@ const products = [
     model: "458 Spider",
     description:
       "The 458 Spider is the first car ever to combine a mid-rear engine with a retractable folding hard top that delivers both unprecedented in-cabin comfort when closed and unparalleled Spider performance.",
-    image: "/img/Ferrari/Ferrari-458Spider.png",
+    image: "/img/Ferrari/458-spider/458-spider-1.jpg",
     featured: false,
     price: 640000,
     stock: 3,
@@ -33,7 +33,7 @@ const products = [
     model: "328 GTB",
     description:
       "The 308 series had won universal acclaim from both customers and critics, and its natural evolution continued with the 328 GTB, a berlinetta fitted with the new 3.2-litre version of the V8.",
-    image: "/img/Ferrari/Ferrari-328GTB.png",
+    image: "/img/Ferrari/328-gtb/328-gtb-1.jpg",
     featured: false,
     price: 130000,
     stock: 4,
@@ -43,7 +43,7 @@ const products = [
     model: "SP48 Unica",
     description:
       "Designed by the Ferrari Styling Centre under the direction of Flavio Manzoni, Chief Design Officer, is a two-seater sports berlinetta developed on the F8 Tributo platform.",
-    image: "/img/Ferrari/Ferrari-SP48Unica.png",
+    image: "/img/Ferrari/sp48-unica/sp48-unica-1.jpg",
     featured: false,
     price: 250000,
     stock: 3,
@@ -53,7 +53,7 @@ const products = [
     model: "288 GTO",
     description:
       "Twin-turbo engine, use of special materials, Pininfarina styling. The first production model with the features of a racing car. The Ferrari GTO",
-    image: "/img/Ferrari/Ferrari-GTO.png",
+    image: "/img/Ferrari/288-gto/1984_Ferrari_288GTO-0-1536.jpg",
     featured: true,
     price: 3250000,
     stock: 2,
@@ -63,7 +63,7 @@ const products = [
     model: "296 GT3",
     description:
       "The Ferrari 296 GT3 is a versatile car, developed with the needs of gentleman drivers in mind, both those who aim to win and those who relish racing on the track.",
-    image: "/img/Ferrari/Ferrari-296GT3.png",
+    image: "img/Ferrari/296-gt3/296-gt3-1.jpg",
     featured: true,
     price: 820000,
     stock: 3,
@@ -102,13 +102,34 @@ const products = [
   {
     model: "103 EX",
     description:
-      " Rolls-Royce 103EX is our first ever vision vehicle, and embodies just one of the endless possibilities that awaits. A personalised icon for the future, providing a sanctuary of calm in an ever-faster world. ",
+      "Rolls-Royce 103EX is our first ever vision vehicle, and embodies just one of the endless possibilities that awaits. A personalised icon for the future, providing a sanctuary of calm in an ever-faster world. ",
     image: "/img/RollsRoyce/RollsRoyce-103Ex.png",
     featured: false,
     price: 1800000,
     stock: 7,
     year: 2024,
   },
+  {
+    model: "Boat Tail",
+    description:
+      "Envisioned by extraordinary clients and realised by the master artisans of Coachbuild, this singular imagining honours the owners’ lifelong reverence for life at sea.",
+    image: "/img/RollsRoyce/boat-tail/boat-tail-1.jpg",
+    featured: false,
+    price: 30000000,
+    stock: 3,
+    year: 2022,
+  },
+  {
+    model: "La Rose Noire Droptail",
+    description:
+      "A modern interpretation of the roadster body style, Droptail represents the next chapter of Rolls-Royce Coachbuild. La Rose Noire Droptail, embodies the allure of the Black Baccara rose.",
+    image: "img/RollsRoyce/la-rose-noire-droptai/ldroptail-1.png",
+    featured: false,
+    price: 30000000,
+    stock: 3,
+    year: 2022,
+  },
+
   {
     model: "911 GT3",
     description:
