@@ -1,170 +1,149 @@
 const products = [
   {
-    model: "Mustang GT Fastback",
-    description:
-      "A two-door, four-seat sports coupe with a 5.0-liter V8 engine that produces 460 horsepower and 420 pound-feet of torque",
-    image: "/img/Ford/Ford-Mustang.png",
-    featured: false,
-    price: 40000,
-    stock: 5,
-    year: 2018,
-  },
-  {
-    model: "MANSORY Stallone 812",
-    description:
-      "A stellar car with a strong name meet MANSORY Stallone, based on Ferrari 812 Superfast. The third generation of a fully refined Ferrari gran turismo is defined by lightweight bodywork components made of visible carbon fibre and several engine modifications, making this stallion an untamed beast.",
-    image: "/img/Ferrari/Ferrari-Stallone.png",
-    featured: false,
-    price: 899998,
-    stock: 5,
-    year: 2020,
-  },
-  {
-    model: "458 Spider",
-    description:
-      "The 458 Spider is the first car ever to combine a mid-rear engine with a retractable folding hard top that delivers both unprecedented in-cabin comfort when closed and unparalleled Spider performance.",
-    image: "/img/Ferrari/Ferrari-458Spider.png",
-    featured: false,
-    price: 640000,
-    stock: 3,
-    year: 2013,
-  },
-  {
-    model: "328 GTB",
-    description:
-      "The 308 series had won universal acclaim from both customers and critics, and its natural evolution continued with the 328 GTB, a berlinetta fitted with the new 3.2-litre version of the V8.",
-    image: "/img/Ferrari/Ferrari-328GTB.png",
-    featured: false,
-    price: 130000,
-    stock: 4,
-    year: 1985,
-  },
-  {
-    model: "SP48 Unica",
-    description:
-      "Designed by the Ferrari Styling Centre under the direction of Flavio Manzoni, Chief Design Officer, is a two-seater sports berlinetta developed on the F8 Tributo platform.",
-    image: "/img/Ferrari/Ferrari-SP48Unica.png",
-    featured: false,
-    price: 250000,
-    stock: 3,
-    year: 2022,
-  },
-  {
-    model: "288 GTO",
-    description:
-      "Twin-turbo engine, use of special materials, Pininfarina styling. The first production model with the features of a racing car. The Ferrari GTO",
-    image: "/img/Ferrari/Ferrari-GTO.png",
-    featured: true,
-    price: 3250000,
-    stock: 2,
-    year: 1984,
-  },
-  {
-    model: "296 GT3",
-    description:
-      "The Ferrari 296 GT3 is a versatile car, developed with the needs of gentleman drivers in mind, both those who aim to win and those who relish racing on the track.",
-    image: "/img/Ferrari/Ferrari-296GT3.png",
-    featured: true,
-    price: 820000,
-    stock: 3,
-    year: 2022,
-  },
-  {
-    model: "904 Carrera GTS",
-    description:
-      "The Porsche 904 with its small frontal area of only 1.4 square metres, designed by F.A. Porsche, is the first Porsche with a fibre glass-reinforced plastic body.",
-    image: "/img/Porsche/Porsche-1964-CarreraGTS.png",
-    featured: false,
-    price: 2535000,
-    stock: 3,
-    year: 1964,
-  },
-  {
-    model: "Mission X",
-    description:
-      "Flat body, sculptural styling, closed design — the exterior design of the Mission X is both innovative and distinctively Porsche. From the light structure and Le-Mans-style doors to the integrated, adaptive wings.",
-    image: "/img/Porsche/Porsche-MissionX.png",
-    featured: false,
-    price: 1850000,
-    stock: 3,
-    year: 2023,
-  },
-  {
-    model: "Electric Phantom",
-    description:
-      "A luxury car known for its opulent interior, iconic design, and advanced technology.",
-    image: "/img/RollsRoyce/RollsRoyce-ModdedElectricPhantom.png",
-    featured: false,
-    price: 495000,
-    stock: 7,
-    year: 2024,
-  },
-  {
-    model: "103 EX",
-    description:
-      " Rolls-Royce 103EX is our first ever vision vehicle, and embodies just one of the endless possibilities that awaits. A personalised icon for the future, providing a sanctuary of calm in an ever-faster world. ",
-    image: "/img/RollsRoyce/RollsRoyce-103Ex.png",
-    featured: false,
-    price: 1800000,
-    stock: 7,
-    year: 2024,
-  },
-  {
-    model: "911 GT3",
-    description:
-      "For almost 25 years the 911 GT3 has accepted only the limits of physics — and left the ordinary far behind. Motorsport-tested design and maximum performance ensure it unwaveringly bridges the boundary between the racetrack and the road.",
-    image: "/img/Porsche/Porsche-911GT3.png",
-    featured: false,
-    price: 222500,
-    stock: 9,
-    year: 2024,
-  },
-  {
-    model: "100 Coupe S",
-    description:
-      "It is a two-door coupé with a fastback design and a front-engine, front-wheel-drive layout.",
-    image: "/img/Audi/Audi-100CoupeS.png",
-    featured: true,
-    price: 37000,
-    stock: 5,
-    year: 1969,
-  },
-  {
-    model: "Gt Limited",
-    description:
-      "This model was built to honor Ford's 2016 Le Mans win and the 1966 podium sweep. It features a 3.5-liter EcoBoost V6 engine, 660 horsepower, and a top speed of 216 mph.",
-    image: "/img/Ford/Ford-GtLimitedEdition.png",
-    featured: true,
-    price: 1700000,
-    stock: 4,
-    year: 2022,
-  },
-  {
-    model: "Carrera GTS",
-    description:
-      "The 1964 Porsche 904 Carrera GTS is a sports car with a glass fiber body and a steel chassis, and is known for its durability and performance.",
-    image: "/img/Porsche/Porsche-1964-CarreraGTS.png",
-    featured: true,
-    price: 2535000,
-    stock: 10,
-    year: 1964,
-  },
-  {
     model: "Aventador Ultimae",
     description:
       "The Lamborghini Aventador Ultimae is a mid-engine, all-wheel-drive, two-door coupe super sports car with a V12 engine.",
-    image: "/img/Lambo/Aventador_Ultimae/lambo-aventador-left.png",
+    image: "/img/Lambo/Aventador/lambo-aventador-left.png",
+    imageProduct: "/img/Lambo/Aventador/lambo-aventador-left.png",
     photos: [
-      "/img/Lambo/Aventador_Ultimae/lambo-aventador-back.png",
-      "/img/Lambo/Aventador_Ultimae/lambo-aventador-right.png",
-      "/img/Lambo/Aventador_Ultimae/lambo-aventador-left.png",
-      "/img/Lambo/Aventador_Ultimae/lambo-aventador-driving.png",
-      "/img/Lambo/Aventador_Ultimae/lambo-aventador-wheel.png",
+      "/img/Lambo/Aventador/lambo-aventador-back.png",
+      "/img/Lambo/Aventador/lambo-aventador-right.png",
+      "/img/Lambo/Aventador/lambo-aventador-left.png",
+      "/img/Lambo/Avenntador/lambo-aventador-driving.png",
+      "/img/Lambo/Aventador/lambo-aventador-wheel.png",
     ],
-    featured: false,
+    featured: true,
     price: 860000,
     stock: 3,
     year: 2022,
+    power:
+      "The heart of the Aventador LP 780-4 Ultimae is the most powerful standard-production naturally aspirated V12 in Lamborghini history. This result was achieved by incorporating titanium intake valves that increase maximum power to 780 CV (574 kW) at 8,500 rpm.",
+  },
+  {
+    model: "Revuelto",
+    description:
+      "The Lamborghini Revuelto is a high-performance, plug-in hybrid super sports car with a 6.5-liter V12 engine and three electric motors.",
+    image: "/img/Lambo/Revuelto/lambo-revuelto.png",
+    imageProduct: "/img/Lambo/Revuelto/lambo-revuelto.png",
+    photos: [
+      "/img/Lambo/Revuelto/lambo-revuelto.png",
+      "/img/Lambo/Revuelto/lambo-revuelto-back.png",
+      "/img/Lambo/Revuelto/lambo-revuelto-left.png",
+      "/img/Lambo/Revuelto/lambo-revuelto-wheel.png",
+      "/img/Lambo/Revuelto/lambo-aventador-wheel-2.png",
+    ],
+    featured: true,
+    price: 608000,
+    stock: 7,
+    year: 2023,
+    power:
+      "With a total output of 1,001 horsepower, the Revuelto is the most powerful Lamborghini ever made.",
+  },
+  {
+    model: "Miura S",
+    description:
+      "The Miura was the first standard production supercar and was developed from the Miura 350 CV. Is a two-seater sports car with a central V12 engine that was produced from 1969 to 1971.",
+    image: "/img/Lambo/Miura/lambo-miura.png",
+    imageProduct: "/img/Lambo/Miura/lambo-miura.png",
+    photos: [
+      "/img/Lambo/Miura/lambo-miura.png",
+      "/img/Lambo/Miura/lambo-miura2.png",
+      "/img/Lambo/Miura/lambo-back.png",
+      "/img/Lambo/Miura/lambo-back2.png",
+      "/img/Lambo/Miura/lambo-miura-interior.png",
+      "/img/Lambo/Miura/lambo-miura-wheel.png",
+      "/img/Lambo/Miura/lambo-miura-front.png",
+    ],
+    featured: true,
+    price: 2500000,
+    stock: 7,
+    year: 1967,
+    power:
+      "The Miura S has a 4-liter V12 engine with 370 horsepower at 7,500 rpm and 389 N·m of torque at 5,500 rpm.",
+  },
+  {
+    model: "Duke Dynamics",
+    description:
+      "The Duke Dynamics Lamborghini Aventador is a custom kit that includes a front bumper, front fenders, side skirts, rear bumper, and rear diffuser. The kit is designed to improve the car's performance and give it a more aerodynamic and aggressive look.",
+    image: "/img/Lambo/Duke/duke-lambo.png",
+    imageProduct: "/img/Lambo/Duke/duke-lambo.png",
+    photos: [
+      "/img/Lambo/Duke/duke-lambo.png",
+      "/img/Lambo/Duke/duke-lambo-fire.png",
+      "/img/Lambo/Duke/duke-lambo-back.png",
+      "/img/Lambo/Duke/duke-lambo-close-back.png",
+      "/img/Lambo/Duke/duke-lambo-front.png",
+      "/img/Lambo/Duke/duke-lambo-wheel.png",
+      "/img/Lambo/Duke/duke-lambo-close.png",
+    ],
+    featured: true,
+    price: 320000,
+    stock: 4,
+    year: 2023,
+    power:
+      "The mid-mount 6.5 liter V-12, generating 740 CV at 8,400 rpm, offers remarkable pick-up at high engine speeds and an incredibly fast response.",
+  },
+  {
+    model: "765LT",
+    description:
+      "The McLaren 765LT is a two-door, two-passenger, mid-engine, rear-wheel-drive supercar designed for both road and track use. It has an intense driving experience, looks sensational, and has precise steering.",
+    image: "/img/McLaren/765lt/mclaren-765lt.png",
+    imageProduct: "/img/McLaren/765lt/mclaren-765lt.png",
+    photos: [
+      "/img/McLaren/765lt/mclaren-765lt.png",
+      "/img/McLaren/765lt/mclaren-765lt-back.png",
+      "/img/McLaren/765lt/mclaren-765lt-perfil.png",
+      "/img/McLaren/765lt/mclaren-765lt-right.png",
+      "/img/McLaren/765lt/mclaren-765lt-wheel.png",
+    ],
+    featured: true,
+    price: 320000,
+    stock: 4,
+    year: 2023,
+    power:
+      "The Miura S has a 4-liter V12 engine with 370 horsepower at 7,500 rpm and 389 N·m of torque at 5,500 rpm.",
+  },
+  {
+    model: "Mantis 720S Spider",
+    description:
+      "The McLaren 720S Spider is a convertible supercar with a carbon fiber Monocage II-S chassis, a twin-turbo V8 engine, and a top speed of 212 mph.",
+    image: "/img/McLaren/Mantis/mantis-green.png",
+    imageProduct: "/img/McLaren/Mantis/mantis-green.png",
+    photos: [
+      "/img/McLaren/Mantis/mantis-green.png",
+      "/img/McLaren/Mantis/mantis-green-back.png",
+      "/img/McLaren/Mantis/mantis-green-perfil.png",
+      "/img/McLaren/Mantis/mantis-green-doors.png",
+      "/img/McLaren/Mantis/mantis-green-wheel.png",
+      "/img/McLaren/Mantis/mantis-green-front.png",
+      "/img/McLaren/Mantis/mantis-green-half.png",
+      "/img/McLaren/Mantis/mantis-green-up.png",
+    ],
+    featured: true,
+    price: 326500,
+    stock: 10,
+    year: 2018,
+    power: "The 720S Spider has a 710 bhp twin-turbo V8 engine that produces 770 Nm of torque.",
+  },
+  {
+    model: "M6GT Coupé",
+    description:
+      "The 1969 McLaren M6GT Coupé is a high-performance road car with a Chevrolet V8 engine, designed by Bruce McLaren to be the fastest and quickest accelerating car in the world.",
+    image: "/img/McLaren/M6GT/m6gt.png",
+    imageProduct: "/img/McLaren/M6GT/m6gt.png",
+    photos: [
+      "/img/McLaren/M6GT/m6gt.png",
+      "/img/McLaren/M6GT/m6gt-back.png",
+      "/img/McLaren/M6GT/m6gt-front.png",
+      "/img/McLaren/M6GT/m6gt-diagonal.png",
+      "/img/McLaren/M6GT/m6gt-right.png",
+    ],
+    featured: true,
+    price: 230000,
+    stock: 3,
+    year: 1969,
+    power:
+      "The 1969 McLaren M6GT has a Bartz-tuned Chevrolet engine that provides an estimated top speed of 165 miles per hour and a 0 to 100 miles per hour time of eight seconds.",
   },
 ];
 

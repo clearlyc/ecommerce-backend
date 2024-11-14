@@ -21,6 +21,10 @@ class Product extends Model {
         image: {
           type: DataTypes.STRING,
         },
+        imageProduct: {
+          type: DataTypes.STRING,
+          defaultValue: "",
+        },
         photos: {
           type: DataTypes.JSON,
           defaultValue: [],
@@ -36,6 +40,10 @@ class Product extends Model {
         },
         year: {
           type: DataTypes.INTEGER,
+        },
+        power: {
+          type: DataTypes.TEXT,
+          defaultValue: "",
         },
       },
       {
