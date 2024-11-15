@@ -12,7 +12,7 @@ class Order extends Model {
          nanoId: {
           type: DataTypes.STRING,
         },
-        mailAddress: {
+        address: {
           type: DataTypes.STRING,
         },
         status: {
@@ -20,6 +20,7 @@ class Order extends Model {
         },
         productList: {
           type: DataTypes.JSON,
+          defaultValue: []
         }
       },
       {
