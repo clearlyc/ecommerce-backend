@@ -123,12 +123,12 @@ const products = [
       "/img/McLaren/765lt/mclaren-765lt-right.png",
       "/img/McLaren/765lt/mclaren-765lt-wheel.png",
     ],
-    featured: true,
+    featured: false,
     price: 320000,
     stock: 4,
     year: 2023,
     power:
-      "The Miura S has a 4-liter V12 engine with 370 horsepower at 7,500 rpm and 389 N·m of torque at 5,500 rpm.",
+      "The McLaren 765LT has a 4.0 liter twin-turbocharged V8 engine that produces 765 horsepower at 7,500 rpm and 800 Nm of torque at 800 rpm",
   },
   {
     model: "296 GT3",
@@ -240,7 +240,7 @@ const products = [
     model: "911 GT3",
     description:
       "For almost 25 years the 911 GT3 has accepted only the limits of physics — and left the ordinary far behind. Motorsport-tested design and maximum performance ensure it unwaveringly bridges the boundary between the racetrack and the road.",
-    imageProduct: "/img/Porsche/porsche-911-gt3-3.jpg",
+    imageProduct: "/img/Porsche/porsche-911-gt3-1.jpg",
     image: "/img/Porsche/porsche-911-gt3-1.jpg",
     photos: [
       "/img/Porsche/porsche-911-gt3-1.jpg",
@@ -301,7 +301,7 @@ const products = [
       "/img/Lambo/Aventador/lambo-aventador-back.png",
       "/img/Lambo/Aventador/lambo-aventador-right.png",
       "/img/Lambo/Aventador/lambo-aventador-left.png",
-      "/img/Lambo/Avenntador/lambo-aventador-driving.png",
+      "/img/Lambo/Aventador/lambo-aventador-driving.png",
       "/img/Lambo/Aventador/lambo-aventador-wheel.png",
     ],
     featured: false,
@@ -435,8 +435,8 @@ const products = [
     model: "PB18 eTron",
     description:
       "The all-electric Audi PB18 e-tron presents a radical vision for the high-performance sports car of tomorrow. Broad and flat, visibly inspired by the wind tunnel and the race track, its very presence signals that it is destined to push boundaries.",
-    imageProduct: "/img/Audi/audi-pb18-eTron-2.jpg",
-    image: "/img/Audi/audi-pb18-eTron-3.jpg",
+    imageProduct: "/img/Audi/audi-pb18-eTron-4.jpg",
+    image: "/img/Audi/audi-pb18-eTron-4.jpg",
     photos: [
       "/img/Audi/audi-pb18-eTron-2.jpg",
       "/img/Audi/audi-pb18-eTron-3.jpg",
@@ -444,7 +444,7 @@ const products = [
       "/img/Audi/audi-pb18-eTron-4.jpg",
       "/img/Audi/audi-pb18-eTron-5.jpg",
     ],
-    featured: false,
+    featured: true,
     price: 920000,
     stock: 3,
     year: 2022,
