@@ -1,6 +1,5 @@
 const { Product } = require("../models");
 
-// Display a listing of the resource.
 async function index(req, res) {
   try {
     const products = await Product.findAll();
@@ -11,7 +10,6 @@ async function index(req, res) {
   }
 }
 
-// Display the specified resource.
 async function show(req, res) {
   try {
     const productId = req.params.id;
@@ -22,17 +20,47 @@ async function show(req, res) {
   }
 }
 
-// Store a newly created resource in storage.
-async function store(req, res) {}
-
-// Update the specified resource in storage.
-async function update(req, res) {}
-
-// Remove the specified resource from storage.
-async function destroy(req, res) {}
-
-// Otros handlers...
-// ...
+async function store(req, res) {
+  const { model, description, image, imageProduct, photos, price, stock, year, power } = req.body;
+  try {
+    const product = await Product.create({
+      model,
+      description,
+      image,
+      imageProduct,
+      photos,
+      featured: false,
+      price,
+      stock,
+      year,
+      power,
+    });
+    return res.status(200).json(product);
+  } catch (err) {
+    console.error(err);
+  }
+}
+async function update(req, res) {
+  const { model, description, image, imageProduct, photos, price, stock, year, power } = req.body;
+  try {
+    /* const product = Product.findOne({where:{id: req.params.id}}) */
+    const product = Product.update(
+      { model, description, image, imageProduct, photos, price, stock, year, power },
+      { where: { id: req.params.id } },
+    );
+    return res.status(200).json(product);
+  } catch (err) {
+    console.error(err);
+  }
+}
+async function destroy(req, res) {
+  try {
+    const product = Product.destroy({ where: { id: req.params.id } });
+    return res.status(200).json(product);
+  } catch (err) {
+    console.log(err);
+  }
+}
 
 module.exports = {
   index,

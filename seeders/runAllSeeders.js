@@ -18,6 +18,7 @@ require("dotenv").config();
 async function runAllSeeders() {
   await require("./productSeeder")();
   await require("./userSeeder")();
+  await require("./adminSeeder")();
 
   /*
    * Aquí se pueden ejectuar otros seeders que hayan en el sistema.
