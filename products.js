@@ -4,15 +4,15 @@ const products = [
     description:
       "The car's name encapsulates the true significance of all that has been achieved in terms of performance. The reference to the 90th anniversary of the foundation of Scuderia Ferrari underscores the strong link that has always existed between Ferrari’s track and road cars.",
     imageProduct: "/img/Ferrari/sf90-stradale/ferrari-sf90-1.jpg",
-      image: "/img/Ferrari/sf90-stradale/ferrari-sf90-1.jpg",
-      photos: [
+    image: "/img/Ferrari/sf90-stradale/ferrari-sf90-1.jpg",
+    photos: [
       "/img/Ferrari/sf90-stradale/ferrari-sf90-1.jpg",
       "/img/Ferrari/sf90-stradale/ferrari-sf90-2.jpg",
       "/img/Ferrari/sf90-stradale/ferrari-sf90-3.jpg",
       "/img/Ferrari/sf90-stradale/ferrari-sf90-4.jpg",
       "/img/Ferrari/sf90-stradale/ferrari-sf90-5.jpg",
     ],
-    featured: false,
+    featured: true,
     price: 700000,
     stock: 5,
     year: 2020,
@@ -40,8 +40,8 @@ const products = [
     description:
       "The 308 series had won universal acclaim from both customers and critics, and its natural evolution continued with the 328 GTB, a berlinetta fitted with the new 3.2-litre version of the V8.",
     imageProduct: "/img/Ferrari/328-gtb/328-gtb-1.jpg",
-      image: "/img/Ferrari/328-gtb/328-gtb-1.jpg",
-      photos: [
+    image: "/img/Ferrari/328-gtb/328-gtb-1.jpg",
+    photos: [
       "/img/Ferrari/328-gtb/328-gtb-1.jpg",
       "/img/Ferrari/328-gtb/328-gtb-2.jpg",
       "/img/Ferrari/328-gtb/328-gtb-3.jpg",
@@ -57,9 +57,9 @@ const products = [
     model: "SP48 Unica",
     description:
       "Designed by the Ferrari Styling Centre under the direction of Flavio Manzoni, Chief Design Officer, is a two-seater sports berlinetta developed on the F8 Tributo platform.",
-   imageProduct: "/img/Ferrari/sp48-unica/sp48-unica-1.jpg",
-      image: "/img/Ferrari/sp48-unica/sp48-unica-1.jpg",
-      photos: [
+    imageProduct: "/img/Ferrari/sp48-unica/sp48-unica-1.jpg",
+    image: "/img/Ferrari/sp48-unica/sp48-unica-1.jpg",
+    photos: [
       "/img/Ferrari/sp48-unica/sp48-unica-1.jpg",
       "/img/Ferrari/sp48-unica/sp48-unica-2.jpg",
       "/img/Ferrari/sp48-unica/sp48-unica-3.jpg",
@@ -76,8 +76,8 @@ const products = [
     description:
       "Twin-turbo engine, use of special materials, Pininfarina styling. The first production model with the features of a racing car. The Ferrari GTO",
     imageProduct: "/img/Ferrari/288-gto/1984_Ferrari_288GTO-0-1536.jpg",
-      image: "/img/Ferrari/288-gto/1984_Ferrari_288GTO-0-1536.jpg",
-      photos: [
+    image: "/img/Ferrari/288-gto/1984_Ferrari_288GTO-0-1536.jpg",
+    photos: [
       "/img/Ferrari/288-gto/1984_Ferrari_288GTO-0-1536.jpg",
       "/img/Ferrari/288-gto/1984_Ferrari_288GTO-1-1536.jpg",
       "/img/Ferrari/288-gto/1984_Ferrari_288GTO-2-1536.jpg",
@@ -93,8 +93,8 @@ const products = [
     description:
       "The Ferrari 296 GT3 is a versatile car, developed with the needs of gentleman drivers in mind, both those who aim to win and those who relish racing on the track.",
     imageProduct: "/img/Ferrari/296-gt3/296-gt3-1.jpg",
-      image: "/img/Ferrari/296-gt3/296-gt3-1.jpg",
-      photos: [
+    image: "/img/Ferrari/296-gt3/296-gt3-1.jpg",
+    photos: [
       "/img/Ferrari/296-gt3/296-gt3-1.jpg",
       "/img/Ferrari/296-gt3/296-gt3-2.jpg",
       "/img/Ferrari/296-gt3/296-gt3-3.jpg",
@@ -127,7 +127,7 @@ const products = [
     model: "Mission X",
     description:
       "Flat body, sculptural styling, closed design — the exterior design of the Mission X is both innovative and distinctively Porsche. From the light structure and Le-Mans-style doors to the integrated, adaptive wings.",
-    imageProduct: "/img/Porsche/porsche-mission-x-3.jpg",
+    imageProduct: "/img/Porsche/porsche-mission-x-1.jpg",
     image: "/img/Porsche/porsche-mission-x-1.jpg",
     photos: [
       "/img/Porsche/porsche-mission-x-1.jpg",
@@ -146,8 +146,8 @@ const products = [
     description:
       "A luxury car known for its opulent interior, iconic design, and advanced technology.",
     imageProduct: "/img/RollsRoyce/electric-phantom/electric-phantom-1.jpg",
-      image: "/img/RollsRoyce/electric-phantom/electric-phantom-1.jpg",
-      photos: [
+    image: "/img/RollsRoyce/electric-phantom/electric-phantom-1.jpg",
+    photos: [
       "/img/RollsRoyce/electric-phantom/electric-phantom-1.jpg",
       "/img/RollsRoyce/electric-phantom/electric-phantom-2.jpg",
       "/img/RollsRoyce/electric-phantom/electric-phantom-3.jpg",
@@ -163,15 +163,15 @@ const products = [
     description:
       "Rolls-Royce 103EX is our first ever vision vehicle, and embodies just one of the endless possibilities that awaits. A personalised icon for the future, providing a sanctuary of calm in an ever-faster world. ",
     imageProduct: "/img/RollsRoyce/103ex/103ex-1.jpg",
-      image: "/img/RollsRoyce/103ex/103ex-1.jpg",
-      photos: [
+    image: "/img/RollsRoyce/103ex/103ex-1.jpg",
+    photos: [
       "/img/RollsRoyce/103ex/103ex-1.jpg",
       "/img/RollsRoyce/103ex/103ex-2.jpg",
       "/img/RollsRoyce/103ex/103ex-3.jpg",
       "/img/RollsRoyce/103ex/103ex-4.jpg",
       "/img/RollsRoyce/103ex/103ex-5.jpg",
     ],
-    featured: false,
+    featured: true,
     price: 1800000,
     stock: 7,
     year: 2024,
@@ -181,13 +181,12 @@ const products = [
     description:
       "Envisioned by extraordinary clients and realised by the master artisans of Coachbuild, this singular imagining honours the owners’ lifelong reverence for life at sea.",
     imageProduct: "/img/RollsRoyce/boat-tail/boat-tail-1.jpg",
-      image: "/img/RollsRoyce/boat-tail/boat-tail-1.jpg",
-      photos: [
+    image: "/img/RollsRoyce/boat-tail/boat-tail-1.jpg",
+    photos: [
       "/img/RollsRoyce/boat-tail/boat-tail-1.jpg",
       "/img/RollsRoyce/boat-tail/boat-tail-2.jpg",
       "/img/RollsRoyce/boat-tail/boat-tail-3.jpg",
       "/img/RollsRoyce/boat-tail/boat-tail-4.jpg",
-
     ],
     featured: false,
     price: 30000000,
@@ -199,15 +198,15 @@ const products = [
     description:
       "A modern interpretation of the roadster body style, Droptail represents the next chapter of Rolls-Royce Coachbuild. La Rose Noire Droptail, embodies the allure of the Black Baccara rose.",
     imageProduct: "/img/RollsRoyce/la-rose-noire-droptail/droptail-1.png",
-      image: "/img/RollsRoyce/la-rose-noire-droptail/droptail-1.png",
-      photos: [
-     "/img/RollsRoyce/la-rose-noire-droptail/droptail-1.png",
-     "/img/RollsRoyce/la-rose-noire-droptail/droptail-2.png",
-     "/img/RollsRoyce/la-rose-noire-droptail/droptail-3.png",
-     "/img/RollsRoyce/la-rose-noire-droptail/droptail-4.png",
-     "/img/RollsRoyce/la-rose-noire-droptail/droptail-5.png",
+    image: "/img/RollsRoyce/la-rose-noire-droptail/droptail-1.png",
+    photos: [
+      "/img/RollsRoyce/la-rose-noire-droptail/droptail-1.png",
+      "/img/RollsRoyce/la-rose-noire-droptail/droptail-2.png",
+      "/img/RollsRoyce/la-rose-noire-droptail/droptail-3.png",
+      "/img/RollsRoyce/la-rose-noire-droptail/droptail-4.png",
+      "/img/RollsRoyce/la-rose-noire-droptail/droptail-5.png",
     ],
-    featured: false,
+    featured: true,
     price: 30000000,
     stock: 3,
     year: 2022,
@@ -217,7 +216,7 @@ const products = [
     model: "911 GT3",
     description:
       "For almost 25 years the 911 GT3 has accepted only the limits of physics — and left the ordinary far behind. Motorsport-tested design and maximum performance ensure it unwaveringly bridges the boundary between the racetrack and the road.",
-    imageProduct: "/img/Porsche/porsche-911-gt3-3.jpg",
+    imageProduct: "/img/Porsche/porsche-911-gt3-1.jpg",
     image: "/img/Porsche/porsche-911-gt3-1.jpg",
     photos: [
       "/img/Porsche/porsche-911-gt3-1.jpg",
@@ -235,10 +234,10 @@ const products = [
     model: "100 Coupe S",
     description:
       "It is a two-door coupé with a fastback design and a front-engine, front-wheel-drive layout.",
-    imageProduct: "/img/Audi/audi-100-coupe-s-2.png",
-    image: "/img/Audi/audi-100-coupe-s-1.webp",
+    imageProduct: "/img/Audi/audi-100-coupe-s-1.png",
+    image: "/img/Audi/audi-100-coupe-s-1.png",
     photos: [
-      "/img/Audi/audi-100-coupe-s-1.webp",
+      "/img/Audi/audi-100-coupe-s-1.png",
       "/img/Audi/audi-100-coupe-s-2.png",
       "/img/Audi/audi-100-coupe-s-3.png",
       "/img/Audi/audi-100-coupe-s-4.png",
@@ -278,10 +277,10 @@ const products = [
       "/img/Lambo/Aventador/lambo-aventador-back.png",
       "/img/Lambo/Aventador/lambo-aventador-right.png",
       "/img/Lambo/Aventador/lambo-aventador-left.png",
-      "/img/Lambo/Avenntador/lambo-aventador-driving.png",
+      "/img/Lambo/Aventador/lambo-aventador-driving.png",
       "/img/Lambo/Aventador/lambo-aventador-wheel.png",
     ],
-    featured: true,
+    featured: false,
     price: 860000,
     stock: 3,
     year: 2022,
@@ -299,9 +298,9 @@ const products = [
       "/img/Lambo/Revuelto/lambo-revuelto-back.png",
       "/img/Lambo/Revuelto/lambo-revuelto-left.png",
       "/img/Lambo/Revuelto/lambo-revuelto-wheel.png",
-      "/img/Lambo/Revuelto/lambo-aventador-wheel-2.png",
+      "/img/Lambo/Revuelto/lambo-revuelto-wheel-2.png",
     ],
-    featured: true,
+    featured: false,
     price: 608000,
     stock: 7,
     year: 2023,
@@ -317,13 +316,13 @@ const products = [
     photos: [
       "/img/Lambo/Miura/lambo-miura.png",
       "/img/Lambo/Miura/lambo-miura2.png",
-      "/img/Lambo/Miura/lambo-back.png",
-      "/img/Lambo/Miura/lambo-back2.png",
+      "/img/Lambo/Miura/lambo-miura-back.png",
+      "/img/Lambo/Miura/lambo-miura-back2.png",
       "/img/Lambo/Miura/lambo-miura-interior.png",
       "/img/Lambo/Miura/lambo-miura-wheel.png",
       "/img/Lambo/Miura/lambo-miura-front.png",
     ],
-    featured: true,
+    featured: false,
     price: 2500000,
     stock: 7,
     year: 1967,
@@ -344,7 +343,7 @@ const products = [
       "/img/Lambo/Duke/duke-lambo-wheel.png",
       "/img/Lambo/Duke/duke-lambo-close.png",
     ],
-    featured: true,
+    featured: false,
     price: 320000,
     stock: 4,
     year: 2023,
@@ -364,7 +363,7 @@ const products = [
       "/img/McLaren/765lt/mclaren-765lt-right.png",
       "/img/McLaren/765lt/mclaren-765lt-wheel.png",
     ],
-    featured: true,
+    featured: false,
     price: 320000,
     stock: 4,
     year: 2023,
@@ -406,7 +405,7 @@ const products = [
       "/img/McLaren/M6GT/m6gt-diagonal.png",
       "/img/McLaren/M6GT/m6gt-right.png",
     ],
-    featured: true,
+    featured: false,
     price: 230000,
     stock: 3,
     year: 1969,
@@ -435,16 +434,16 @@ const products = [
     model: "PB18 eTron",
     description:
       "The all-electric Audi PB18 e-tron presents a radical vision for the high-performance sports car of tomorrow. Broad and flat, visibly inspired by the wind tunnel and the race track, its very presence signals that it is destined to push boundaries.",
-    imageProduct: "/img/Audi/audi-pb18-eTron-2.jpg",
-    image: "/img/Audi/audi-pb18-eTron-3.jpg",
+    imageProduct: "/img/Audi/audi-pb18-eTron-4.jpg",
+    image: "/img/Audi/audi-pb18-eTron-4.jpg",
     photos: [
-      "/img/Audi/audi-pb18-eTron-1.jpg",
+      "/img/Audi/audi-pb18-eTron-4.jpg",
       "/img/Audi/audi-pb18-eTron-2.jpg",
       "/img/Audi/audi-pb18-eTron-3.jpg",
-      "/img/Audi/audi-pb18-eTron-4.jpg",
+      "/img/Audi/audi-pb18-eTron-1.jpg",
       "/img/Audi/audi-pb18-eTron-5.jpg",
     ],
-    featured: false,
+    featured: true,
     price: 920000,
     stock: 3,
     year: 2022,
