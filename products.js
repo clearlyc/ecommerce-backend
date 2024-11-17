@@ -22,20 +22,20 @@ const products = [
     description:
       "A modern interpretation of the roadster body style, Droptail represents the next chapter of Rolls-Royce Coachbuild. La Rose Noire Droptail, embodies the allure of the Black Baccara rose.",
     imageProduct: "/img/RollsRoyce/la-rose-noire-droptail/droptail-1.png",
-      image: "/img/RollsRoyce/la-rose-noire-droptail/droptail-1.png",
-      photos: [
-     "/img/RollsRoyce/la-rose-noire-droptail/droptail-1.png",
-     "/img/RollsRoyce/la-rose-noire-droptail/droptail-2.png",
-     "/img/RollsRoyce/la-rose-noire-droptail/droptail-3.png",
-     "/img/RollsRoyce/la-rose-noire-droptail/droptail-4.png",
-     "/img/RollsRoyce/la-rose-noire-droptail/droptail-5.png",
+    image: "/img/RollsRoyce/la-rose-noire-droptail/droptail-1.png",
+    photos: [
+      "/img/RollsRoyce/la-rose-noire-droptail/droptail-1.png",
+      "/img/RollsRoyce/la-rose-noire-droptail/droptail-2.png",
+      "/img/RollsRoyce/la-rose-noire-droptail/droptail-3.png",
+      "/img/RollsRoyce/la-rose-noire-droptail/droptail-4.png",
+      "/img/RollsRoyce/la-rose-noire-droptail/droptail-5.png",
     ],
     featured: true,
     price: 30000000,
     stock: 3,
     year: 2022,
   },
-  
+
   {
     model: "328 GTB",
     description:
@@ -235,30 +235,12 @@ const products = [
     stock: 3,
     year: 2022,
   },
-  {
-    model: "La Rose Noire Droptail",
-    description:
-      "A modern interpretation of the roadster body style, Droptail represents the next chapter of Rolls-Royce Coachbuild. La Rose Noire Droptail, embodies the allure of the Black Baccara rose.",
-    imageProduct: "/img/RollsRoyce/la-rose-noire-droptail/droptail-1.png",
-    image: "/img/RollsRoyce/la-rose-noire-droptail/droptail-1.png",
-    photos: [
-      "/img/RollsRoyce/la-rose-noire-droptail/droptail-1.png",
-      "/img/RollsRoyce/la-rose-noire-droptail/droptail-2.png",
-      "/img/RollsRoyce/la-rose-noire-droptail/droptail-3.png",
-      "/img/RollsRoyce/la-rose-noire-droptail/droptail-4.png",
-      "/img/RollsRoyce/la-rose-noire-droptail/droptail-5.png",
-    ],
-    featured: true,
-    price: 30000000,
-    stock: 3,
-    year: 2022,
-  },
 
   {
     model: "911 GT3",
     description:
       "For almost 25 years the 911 GT3 has accepted only the limits of physics — and left the ordinary far behind. Motorsport-tested design and maximum performance ensure it unwaveringly bridges the boundary between the racetrack and the road.",
-    imageProduct: "/img/Porsche/porsche-911-gt3-1.jpg",
+    imageProduct: "/img/Porsche/porsche-911-gt3-3.jpg",
     image: "/img/Porsche/porsche-911-gt3-1.jpg",
     photos: [
       "/img/Porsche/porsche-911-gt3-1.jpg",
@@ -319,7 +301,7 @@ const products = [
       "/img/Lambo/Aventador/lambo-aventador-back.png",
       "/img/Lambo/Aventador/lambo-aventador-right.png",
       "/img/Lambo/Aventador/lambo-aventador-left.png",
-      "/img/Lambo/Aventador/lambo-aventador-driving.png",
+      "/img/Lambo/Avenntador/lambo-aventador-driving.png",
       "/img/Lambo/Aventador/lambo-aventador-wheel.png",
     ],
     featured: false,
@@ -368,47 +350,6 @@ const products = [
     price: 2500000,
     stock: 7,
     year: 1967,
-    power:
-      "The Miura S has a 4-liter V12 engine with 370 horsepower at 7,500 rpm and 389 N·m of torque at 5,500 rpm.",
-  },
-  {
-    model: "Duke Dynamics",
-    description:
-      "The Duke Dynamics Lamborghini Aventador is a custom kit that includes a front bumper, front fenders, side skirts, rear bumper, and rear diffuser. The kit is designed to improve the car's performance and give it a more aerodynamic and aggressive look.",
-    image: "/img/Lambo/Duke/duke-lambo.png",
-    imageProduct: "/img/Lambo/Duke/duke-lambo.png",
-    photos: [
-      "/img/Lambo/Duke/duke-lambo.png",
-      "/img/Lambo/Duke/duke-lambo-fire.png",
-      "/img/Lambo/Duke/duke-lambo-back.png",
-      "/img/Lambo/Duke/duke-lambo-front.png",
-      "/img/Lambo/Duke/duke-lambo-wheel.png",
-      "/img/Lambo/Duke/duke-lambo-close.png",
-    ],
-    featured: true,
-    price: 320000,
-    stock: 4,
-    year: 2023,
-    power:
-      "The mid-mount 6.5 liter V-12, generating 740 CV at 8,400 rpm, offers remarkable pick-up at high engine speeds and an incredibly fast response.",
-  },
-  {
-    model: "765LT",
-    description:
-      "The McLaren 765LT is a two-door, two-passenger, mid-engine, rear-wheel-drive supercar designed for both road and track use. It has an intense driving experience, looks sensational, and has precise steering.",
-    image: "/img/McLaren/765lt/mclaren-765lt.png",
-    imageProduct: "/img/McLaren/765lt/mclaren-765lt.png",
-    photos: [
-      "/img/McLaren/765lt/mclaren-765lt.png",
-      "/img/McLaren/765lt/mclaren-765lt-back.png",
-      "/img/McLaren/765lt/mclaren-765lt-perfil.png",
-      "/img/McLaren/765lt/mclaren-765lt-right.png",
-      "/img/McLaren/765lt/mclaren-765lt-wheel.png",
-    ],
-    featured: true,
-    price: 320000,
-    stock: 4,
-    year: 2023,
     power:
       "The Miura S has a 4-liter V12 engine with 370 horsepower at 7,500 rpm and 389 N·m of torque at 5,500 rpm.",
   },
@@ -494,16 +435,16 @@ const products = [
     model: "PB18 eTron",
     description:
       "The all-electric Audi PB18 e-tron presents a radical vision for the high-performance sports car of tomorrow. Broad and flat, visibly inspired by the wind tunnel and the race track, its very presence signals that it is destined to push boundaries.",
-    imageProduct: "/img/Audi/audi-pb18-eTron-4.jpg",
-    image: "/img/Audi/audi-pb18-eTron-4.jpg",
+    imageProduct: "/img/Audi/audi-pb18-eTron-2.jpg",
+    image: "/img/Audi/audi-pb18-eTron-3.jpg",
     photos: [
-      "/img/Audi/audi-pb18-eTron-4.jpg",
       "/img/Audi/audi-pb18-eTron-2.jpg",
       "/img/Audi/audi-pb18-eTron-3.jpg",
       "/img/Audi/audi-pb18-eTron-1.jpg",
+      "/img/Audi/audi-pb18-eTron-4.jpg",
       "/img/Audi/audi-pb18-eTron-5.jpg",
     ],
-    featured: true,
+    featured: false,
     price: 920000,
     stock: 3,
     year: 2022,
