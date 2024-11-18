@@ -2,7 +2,7 @@ const { Product } = require("../models");
 
 async function index(req, res) {
   try {
-    const products = await Product.findAll();
+    const products = (await Product.findAll({include: "brand"}));
     return res.status(200).json(products);
   } catch (err) {
     console.error(err);
@@ -13,7 +13,7 @@ async function index(req, res) {
 async function show(req, res) {
   try {
     const productId = req.params.id;
-    const product = await Product.findOne({ where: { id: productId } });
+    const product = await Product.findOne({ where: { id: productId }, include: "brand"});
     return res.status(200).json(product);
   } catch (err) {
     console.error(err);
@@ -21,7 +21,7 @@ async function show(req, res) {
 }
 
 async function store(req, res) {
-  const { model, description, image, imageProduct, photos, price, stock, year, power } = req.body;
+  const { model, description, image, imageProduct, photos, price, stock, year, power, brandId } = req.body;
   try {
     const product = await Product.create({
       model,
@@ -34,6 +34,7 @@ async function store(req, res) {
       stock,
       year,
       power,
+      brandId,
     });
     return res.status(200).json(product);
   } catch (err) {
@@ -41,12 +42,11 @@ async function store(req, res) {
   }
 }
 async function update(req, res) {
-  const { model, description, image, imageProduct, photos, price, stock, year, power } = req.body;
+  const { model, description, image, imageProduct, photos, price, featured, stock, year, power, brandId } = req.body;
   try {
-    /* const product = Product.findOne({where:{id: req.params.id}}) */
     const product = Product.update(
-      { model, description, image, imageProduct, photos, price, stock, year, power },
-      { where: { id: req.params.id } },
+      { model, description, image, imageProduct, photos, price, featured, stock, year, power, brandId },
+      { where: { id:req.params.id } },
     );
     return res.status(200).json(product);
   } catch (err) {

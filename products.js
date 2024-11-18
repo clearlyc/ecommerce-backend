@@ -16,6 +16,7 @@ const products = [
     price: 700000,
     stock: 5,
     year: 2020,
+    brandId: 3,
   },
   {
     model: "La Rose Noire Droptail",
@@ -34,6 +35,7 @@ const products = [
     price: 30000000,
     stock: 3,
     year: 2022,
+    brandId: 4,
   },
 
   {
@@ -53,6 +55,7 @@ const products = [
     price: 130000,
     stock: 4,
     year: 1985,
+    brandId: 3,
   },
   {
     model: "Duke Dynamics",
@@ -74,6 +77,7 @@ const products = [
     year: 2023,
     power:
       "The mid-mount 6.5 liter V-12, generating 740 CV at 8,400 rpm, offers remarkable pick-up at high engine speeds and an incredibly fast response.",
+    brandId: 5,
   },
   {
     model: "SP48 Unica",
@@ -92,6 +96,7 @@ const products = [
     price: 250000,
     stock: 3,
     year: 2022,
+    brandId: 3,
   },
   {
     model: "288 GTO",
@@ -109,6 +114,7 @@ const products = [
     price: 3250000,
     stock: 2,
     year: 1984,
+    brandId: 3,
   },
   {
     model: "765LT",
@@ -129,6 +135,7 @@ const products = [
     year: 2023,
     power:
       "The McLaren 765LT has a 4.0 liter twin-turbocharged V8 engine that produces 765 horsepower at 7,500 rpm and 800 Nm of torque at 800 rpm",
+      brandId: 1
   },
   {
     model: "296 GT3",
@@ -146,6 +153,7 @@ const products = [
     price: 820000,
     stock: 3,
     year: 2022,
+    brandId: 3,
   },
   {
     model: "356 SC",
@@ -164,6 +172,7 @@ const products = [
     price: 559500,
     stock: 3,
     year: 1964,
+    brandId: 2,
   },
   {
     model: "Mission X",
@@ -182,6 +191,7 @@ const products = [
     price: 1850000,
     stock: 3,
     year: 2025,
+    brandId: 2
   },
   {
     model: "Electric Phantom V",
@@ -199,6 +209,7 @@ const products = [
     price: 495000,
     stock: 7,
     year: 1959,
+    brandId: 4,
   },
   {
     model: "103 EX",
@@ -217,6 +228,7 @@ const products = [
     price: 1800000,
     stock: 7,
     year: 2024,
+    brandId: 4,
   },
   {
     model: "Boat Tail",
@@ -234,6 +246,7 @@ const products = [
     price: 30000000,
     stock: 3,
     year: 2022,
+    brandId: 4,
   },
 
   {
@@ -253,6 +266,7 @@ const products = [
     price: 222500,
     stock: 9,
     year: 2024,
+    brandId: 2
   },
   {
     model: "100 Coupe S",
@@ -271,6 +285,7 @@ const products = [
     price: 37000,
     stock: 5,
     year: 1969,
+    brandId: 6,
   },
   {
     model: "Spider RS",
@@ -290,6 +305,7 @@ const products = [
     price: 2535000,
     stock: 10,
     year: 2024,
+    brandId: 2
   },
   {
     model: "Aventador Ultimae",
@@ -310,7 +326,8 @@ const products = [
     year: 2022,
     power:
       "The heart of the Aventador LP 780-4 Ultimae is the most powerful standard-production naturally aspirated V12 in Lamborghini history. This result was achieved by incorporating titanium intake valves that increase maximum power to 780 CV (574 kW) at 8,500 rpm.",
-  },
+    brandId: 5,
+    },
   {
     model: "Revuelto",
     description:
@@ -330,6 +347,7 @@ const products = [
     year: 2023,
     power:
       "With a total output of 1,001 horsepower, the Revuelto is the most powerful Lamborghini ever made.",
+    brandId: 5,
   },
   {
     model: "Miura S",
@@ -352,6 +370,7 @@ const products = [
     year: 1967,
     power:
       "The Miura S has a 4-liter V12 engine with 370 horsepower at 7,500 rpm and 389 N·m of torque at 5,500 rpm.",
+    brandId: 5,
   },
   {
     model: "Mantis 720S Spider",
@@ -374,6 +393,7 @@ const products = [
     stock: 10,
     year: 2018,
     power: "The 720S Spider has a 710 bhp twin-turbo V8 engine that produces 770 Nm of torque.",
+    brandId: 1
   },
   {
     model: "M6GT Coupé",
@@ -394,6 +414,7 @@ const products = [
     year: 1969,
     power:
       "The 1969 McLaren M6GT has a Bartz-tuned Chevrolet engine that provides an estimated top speed of 165 miles per hour and a 0 to 100 miles per hour time of eight seconds.",
+      brandId: 1
   },
   {
     model: "458 Spider",
@@ -412,6 +433,7 @@ const products = [
     price: 640000,
     stock: 3,
     year: 2013,
+    brandId: 3
   },
   {
     model: "Taycan Turbo",
@@ -430,6 +452,7 @@ const products = [
     price: 920000,
     stock: 3,
     year: 2022,
+    brandId: 2
   },
   {
     model: "PB18 eTron",
@@ -448,6 +471,7 @@ const products = [
     price: 920000,
     stock: 3,
     year: 2022,
+    brandId: 6,
   },
 ];
 

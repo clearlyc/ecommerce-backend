@@ -16,6 +16,7 @@
 require("dotenv").config();
 
 async function runAllSeeders() {
+  await require("./brandSeeder")();
   await require("./productSeeder")();
   await require("./userSeeder")();
   await require("./adminSeeder")();
