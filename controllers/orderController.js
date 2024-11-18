@@ -1,49 +1,60 @@
 const { Order } = require("../models");
 
-// Display a listing of the resource.
 async function index(req, res) {
   try {
-    
+    const orders = await Order.findAll();
+    return res.status(200).json(orders);
   } catch (err) {
-   
+    console.error(err);
   }
 }
 
-// Display the specified resource.
 async function show(req, res) {
   try {
-    
+    const order = await Order.findOne({ where: { id: req.params.id } });
+    return res.status(200).json(order);
   } catch (err) {
-    
+    console.error(err);
   }
 }
 
-// Store a newly created resource in storage.
 async function store(req, res) {
- const {address, cart, nanoId} = req.body;
- try {
+  const { address, cart, nanoId } = req.body;
+  try {
     const order = await Order.create({
       address,
       productList: cart,
       userId: req.auth.sub,
       nanoId,
       status: "Pending",
-    })
+    });
     return res.status(200).json(order);
   } catch (err) {
-    console.error(err)
+    console.error(err);
   }
-  
 }
 
-// Update the specified resource in storage.
-async function update(req, res) {}
+async function update(req, res) {
+  try {
+    const {address, status } = req.body;
+    const order = Order.update(
+      { address, status },
+      { where: { id: req.params.id } },
+    );
+    return res.status(200).json(order);
+  } catch (err) {
+    console.error(err);
+  }
+}
 
-// Remove the specified resource from storage.
-async function destroy(req, res) {}
-
-// Otros handlers...
-// ...
+async function destroy(req, res) {
+  try{
+const order = await Order.destroy({where:{id:req.params.id}})
+return res.status(200).json(order)
+  }catch(err){
+    console.error(err)
+  }
+}
 
 module.exports = {
   index,
