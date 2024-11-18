@@ -41,12 +41,11 @@ async function store(req, res) {
   }
 }
 async function update(req, res) {
-  const { model, description, image, imageProduct, photos, price, stock, year, power } = req.body;
+  const { model, description, image, imageProduct, photos, price, stock, year, power, id } = req.body;
   try {
-    /* const product = Product.findOne({where:{id: req.params.id}}) */
     const product = Product.update(
       { model, description, image, imageProduct, photos, price, stock, year, power },
-      { where: { id: req.params.id } },
+      { where: { id: req.body.id } },
     );
     return res.status(200).json(product);
   } catch (err) {
