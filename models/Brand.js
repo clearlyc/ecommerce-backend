@@ -9,9 +9,6 @@ class Brand extends Model {
           primaryKey: true,
           autoIncrement: true,
         },
-        nanoId: {
-          type: DataTypes.STRING,
-        },
         name: {
           type: DataTypes.STRING,
         },

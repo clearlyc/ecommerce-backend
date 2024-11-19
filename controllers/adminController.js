@@ -23,8 +23,12 @@ async function store(req, res) {
       email,
       password,
     });
-    const adminNoPassword = {firstname, lastname, email}
-    return res.status(200).json(adminNoPassword);
+    const thisAdmin = await Admin.findOne({
+      where: { email: req.body.email },
+      attributes: { exclude: ["password"] },
+    });
+    const adminNoPassword = { firstname, lastname, email };
+    return res.status(200).json(thisAdmin);
   } catch (err) {
     console.error(err);
   }
@@ -32,8 +36,9 @@ async function store(req, res) {
 
 async function update(req, res) {
   try {
-    const {firstname, lastname, email, password} = req.body
-    const admin = Admin.update({ firstname, lastname, email, password }, { where: { id:req.params.id } });
+    const { firstname, lastname, email, password } = req.body;
+    await Admin.update({ firstname, lastname, email, password }, { where: { id: req.params.id } });
+    const admin = await Admin.findByPk(req.params.id);
     return res.status(200).json(admin);
   } catch (err) {
     console.error(err);
@@ -41,11 +46,11 @@ async function update(req, res) {
 }
 
 async function destroy(req, res) {
-  try{
-const admin = Admin.destroy({where: {id: req.params.id}})
-return res.status(200).json(admin)
-  }catch(err){
-    console.error(err)
+  try {
+    const admin = Admin.destroy({ where: { id: req.params.id } });
+    return res.status(200).json(admin);
+  } catch (err) {
+    console.error(err);
   }
 }
 

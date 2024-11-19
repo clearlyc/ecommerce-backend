@@ -27,7 +27,7 @@ async function store(req, res) {
       email,
       password,
     });
-    const userNoPassword = {firstname, lastname, phone, email}
+    const userNoPassword = { firstname, lastname, phone, email };
     return res.status(200).json(userNoPassword);
   } catch (err) {
     console.error(err);
@@ -44,18 +44,24 @@ async function update(req, res) {
   }
 }
 
+async function profileUpdate(req, res) {
+  const { firstname, lastname, phone, email } = req.body;
+  try {
+    await User.update({ firstname, lastname, phone, email }, { where: { id: req.params.id } });
+    const user = await User.findByPk(req.params.id);
+    return res.status(200).json(user);
+  } catch (err) {
+    console.error(err);
+  }
+}
 
-
-// Remove the specified resource from storage.
 async function destroy(req, res) {}
-
-// Otros handlers...
-// ...
 
 module.exports = {
   index,
   show,
   store,
   update,
+  profileUpdate,
   destroy,
 };

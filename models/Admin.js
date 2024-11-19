@@ -1,4 +1,5 @@
 const { Model, DataTypes } = require("sequelize");
+const bcrypt = require("bcryptjs");
 
 class Admin extends Model {
   static initModel(sequelize) {
@@ -23,6 +24,10 @@ class Admin extends Model {
         },
         password: {
           type: DataTypes.STRING,
+          set(value) {
+            const hash = bcrypt.hashSync(value, 10);
+            this.setDataValue("password", hash);
+          },
         },
       },
       {
