@@ -1,4 +1,5 @@
 const { Product } = require("../models");
+const formidable = require("formidable");
 
 async function index(req, res) {
   try {
@@ -35,20 +36,31 @@ async function store(req, res) {
     brandId,
   } = req.body;
   try {
-    const product = await Product.create({
-      model,
-      description,
-      image,
-      imageProduct,
-      photos,
-      featured,
-      price,
-      stock,
-      year,
-      power,
-      brandId,
+    const form = formidable({
+      multiples: true,
+      uploadDir: __dirname + "/../public/img",
+      keepExtensions: true,
     });
-    return res.status(200).json(product);
+    form.parse(req, async (err, fields, files) => {
+      // Hacer algo con fields y files...
+      console.log({ err, fields, files });
+
+      const { model, description, featured, price, stock, year, engine, brandId } = fields;
+      const product = await Product.create({
+        model,
+        description,
+        image: files.images.newFilename,
+        imageProduct: files.images.newFilename,
+        photos,
+        featured,
+        price: Number(price),
+        stock: Number(stock),
+        year: Number(year),
+        engine,
+        brandId: Number(brandId),
+      });
+      return res.status(200).json(product);
+    });
   } catch (err) {
     console.error(err);
   }

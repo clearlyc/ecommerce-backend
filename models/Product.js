@@ -9,17 +9,21 @@ class Product extends Model {
           primaryKey: true,
           autoIncrement: true,
         },
-        nanoId: {
+        /* nanoId: {
           type: DataTypes.STRING,
-        },
+          defaultValue: "",
+        }, */
         model: {
           type: DataTypes.STRING,
+          defaultValue: "",
         },
         description: {
           type: DataTypes.TEXT,
+          defaultValue: "",
         },
         image: {
           type: DataTypes.STRING,
+          defaultValue: "",
         },
         imageProduct: {
           type: DataTypes.STRING,
@@ -31,17 +35,21 @@ class Product extends Model {
         },
         featured: {
           type: DataTypes.BOOLEAN,
+          defaultValue: false,
         },
         price: {
-          type: DataTypes.FLOAT,
+          type: DataTypes.DECIMAL,
+          defaultValue: 0,
         },
         stock: {
           type: DataTypes.INTEGER,
+          defaultValue: 0,
         },
         year: {
           type: DataTypes.INTEGER,
+          defaultValue: 0,
         },
-        power: {
+        engine: {
           type: DataTypes.TEXT,
           defaultValue: "",
         },
