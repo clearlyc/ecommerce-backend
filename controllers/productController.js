@@ -22,19 +22,6 @@ async function show(req, res) {
 }
 
 async function store(req, res) {
-  const {
-    model,
-    description,
-    image,
-    imageProduct,
-    photos,
-    featured,
-    price,
-    stock,
-    year,
-    power,
-    brandId,
-  } = req.body;
   try {
     const form = formidable({
       multiples: true,
@@ -42,16 +29,14 @@ async function store(req, res) {
       keepExtensions: true,
     });
     form.parse(req, async (err, fields, files) => {
-      // Hacer algo con fields y files...
-      console.log({ err, fields, files });
-
+      console.log({ fields, files });
       const { model, description, featured, price, stock, year, engine, brandId } = fields;
-      const product = await Product.create({
+      const createProduct = await Product.create({
         model,
         description,
         image: files.images.newFilename,
         imageProduct: files.images.newFilename,
-        photos,
+        photos: [],
         featured,
         price: Number(price),
         stock: Number(stock),
@@ -59,45 +44,44 @@ async function store(req, res) {
         engine,
         brandId: Number(brandId),
       });
+      const product = await Product.findOne({ where: { id: createProduct.id }, include: "brand" });
       return res.status(200).json(product);
     });
   } catch (err) {
     console.error(err);
   }
 }
+
 async function update(req, res) {
-  const {
-    model,
-    description,
-    image,
-    imageProduct,
-    photos,
-    price,
-    featured,
-    stock,
-    year,
-    power,
-    brandId,
-  } = req.body;
   try {
-    await Product.update(
-      {
-        model,
-        description,
-        image,
-        imageProduct,
-        photos,
-        price,
-        featured,
-        stock,
-        year,
-        power,
-        brandId,
-      },
-      { where: { id: req.params.id } },
-    );
-    const product = await Product.findByPk(req.params.id, { include: "brand" });
-    return res.status(200).json(product);
+    const form = formidable({
+      multiples: true,
+      uploadDir: __dirname + "/../public/img",
+      keepExtensions: true,
+    });
+
+    form.parse(req, async (err, fields, files) => {
+      const { model, description, featured, price, stock, year, engine, brandId } = fields;
+      console.log({ fields, files });
+      await Product.update(
+        {
+          model,
+          description,
+          image: files.images.newFilename,
+          imageProduct: files.images.newFilename,
+          /* photos: [], */
+          featured: featured,
+          price: Number(price),
+          stock: Number(stock),
+          year: Number(year),
+          engine,
+          brandId: Number(brandId),
+        },
+        { where: { id: req.params.id } },
+      );
+      const product = await Product.findByPk(req.params.id, { include: "brand" });
+      return res.status(200).json(product);
+    });
   } catch (err) {
     console.error(err);
   }
