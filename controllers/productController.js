@@ -1,5 +1,9 @@
 const { Product } = require("../models");
 const formidable = require("formidable");
+const { createClient } = require("@supabase/supabase-js");
+const fs = require("fs");
+
+const supabase = createClient(process.env.SUPABASE_URL, process.env.SUPABASE_KEY);
 
 async function index(req, res) {
   try {
@@ -36,7 +40,7 @@ async function store(req, res) {
         description,
         image: files.images.newFilename,
         imageProduct: files.images.newFilename,
-        photos: [],
+        photos: [files.images.newFilename],
         featured,
         price: Number(price),
         stock: Number(stock),
@@ -44,6 +48,15 @@ async function store(req, res) {
         engine,
         brandId: Number(brandId),
       });
+      const { data, error } = await supabase.storage
+        .from("img")
+        .upload(files.images.newFilename, fs.createReadStream(files.images.filepath), {
+          cacheControl: "3600",
+          upsert: false,
+          contentType: files.images.mimeType,
+          duplex: "half",
+        });
+
       const product = await Product.findOne({ where: { id: createProduct.id }, include: "brand" });
       return res.status(200).json(product);
     });

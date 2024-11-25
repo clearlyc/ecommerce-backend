@@ -5,11 +5,6 @@ class Admin extends Model {
   static initModel(sequelize) {
     Admin.init(
       {
-        id: {
-          type: DataTypes.BIGINT.UNSIGNED,
-          primaryKey: true,
-          autoIncrement: true,
-        },
         nanoId: {
           type: DataTypes.STRING,
         },

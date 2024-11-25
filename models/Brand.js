@@ -4,11 +4,6 @@ class Brand extends Model {
   static initModel(sequelize) {
     Brand.init(
       {
-        id: {
-          type: DataTypes.BIGINT.UNSIGNED,
-          primaryKey: true,
-          autoIncrement: true,
-        },
         name: {
           type: DataTypes.STRING,
         },

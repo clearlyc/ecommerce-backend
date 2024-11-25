@@ -4,15 +4,6 @@ class Product extends Model {
   static initModel(sequelize) {
     Product.init(
       {
-        id: {
-          type: DataTypes.BIGINT.UNSIGNED,
-          primaryKey: true,
-          autoIncrement: true,
-        },
-        /* nanoId: {
-          type: DataTypes.STRING,
-          defaultValue: "",
-        }, */
         model: {
           type: DataTypes.STRING,
           defaultValue: "",

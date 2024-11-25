@@ -4,12 +4,7 @@ class Order extends Model {
   static initModel(sequelize) {
     Order.init(
       {
-        id: {
-          type: DataTypes.BIGINT.UNSIGNED,
-          primaryKey: true,
-          autoIncrement: true,
-        },
-         nanoId: {
+        nanoId: {
           type: DataTypes.STRING,
         },
         address: {
@@ -20,8 +15,8 @@ class Order extends Model {
         },
         productList: {
           type: DataTypes.JSON,
-          defaultValue: []
-        }
+          defaultValue: [],
+        },
       },
       {
         sequelize,

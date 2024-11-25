@@ -5,11 +5,6 @@ class User extends Model {
   static initModel(sequelize) {
     User.init(
       {
-        id: {
-          type: DataTypes.BIGINT.UNSIGNED,
-          primaryKey: true,
-          autoIncrement: true,
-        },
         nanoId: {
           type: DataTypes.STRING,
         },
@@ -24,10 +19,10 @@ class User extends Model {
         },
         password: {
           type: DataTypes.STRING,
-          set(value){
+          set(value) {
             const hash = bcrypt.hashSync(value, 10);
             this.setDataValue("password", hash);
-          }
+          },
         },
         phone: {
           type: DataTypes.INTEGER,
