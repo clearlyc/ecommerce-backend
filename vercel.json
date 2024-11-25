@@ -13,5 +13,8 @@
       "src": "/(.)",
       "dest": "/server.js"
     }
-  ]
+  ],
+  "trailingSlash": false,
+  "rewrites": [{ "source": "/(.*)", "destination": "/api" }]
+
 }
