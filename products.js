@@ -16,6 +16,8 @@ const products = [
     price: 700000,
     stock: 5,
     year: 2020,
+    engine:
+      "The SF90 Stradale is Ferrari's first plug-in hybrid electric vehicle (PHEV). It's also the first mid-engine Ferrari with all-wheel drive. It has a 4.0-liter twin-turbo 90-degree V8 engine and three electric motors.",
     brandId: 3,
   },
   {
@@ -35,6 +37,8 @@ const products = [
     price: 30000000,
     stock: 3,
     year: 2022,
+    engine:
+      "The Rolls-Royce La Rose Noire Droptail has a 6.75-liter twin-turbocharged V12 engine that produces: 563 horsepower, 625 lb-ft of torque, 0 to 60 mph in 4.8 seconds, and A top speed of 155 mph.",
     brandId: 4,
   },
 
@@ -55,6 +59,8 @@ const products = [
     price: 130000,
     stock: 4,
     year: 1985,
+    engine:
+      "The 328 GTB was produced from 1986 to 1989, and was the last Ferrari with a transverse V8 engine. It was considered a reliable and functional model, and was relatively simple compared to other Ferraris of the time. The 328 GTB could accelerate from 0 to 60 miles per hour in about 5.5 seconds, and had a top speed of 166 miles per hour.",
     brandId: 3,
   },
   {
@@ -75,7 +81,7 @@ const products = [
     price: 320000,
     stock: 4,
     year: 2023,
-    power:
+    engine:
       "The mid-mount 6.5 liter V-12, generating 740 CV at 8,400 rpm, offers remarkable pick-up at high engine speeds and an incredibly fast response.",
     brandId: 5,
   },
@@ -96,12 +102,14 @@ const products = [
     price: 250000,
     stock: 3,
     year: 2022,
+    engine:
+      "The Ferrari SP48 Unica has a 3.9-liter twin-turbo V8 engine that produces 710 horsepower and 770 Newton-meters (568 pound-feet) of torque.",
     brandId: 3,
   },
   {
     model: "288 GTO",
     description:
-      "Twin-turbo engine, use of special materials, Pininfarina styling. The first production model with the features of a racing car. The Ferrari GTO",
+      "Twin-turbo engine, use of special materials, Pininfarina styling. The first production model with the features of a racing car.",
     imageProduct: "Ferrari/288-gto/1984_Ferrari_288GTO-0-1536.jpg",
     image: "Ferrari/288-gto/1984_Ferrari_288GTO-0-1536.jpg",
     photos: [
@@ -114,6 +122,8 @@ const products = [
     price: 3250000,
     stock: 2,
     year: 1984,
+    engine:
+      "The 288 GTO's engine is longitudinally mounted, which is different from the transverse mounting of other Ferrari models. This longitudinal mounting allows for a better gear ratio and a lower center of gravity, which is beneficial for racing",
     brandId: 3,
   },
   {
@@ -133,9 +143,9 @@ const products = [
     price: 320000,
     stock: 4,
     year: 2023,
-    power:
-      "The McLaren 765LT has a 4.0 liter twin-turbocharged V8 engine that produces 765 horsepower at 7,500 rpm and 800 Nm of torque at 800 rpm",
-      brandId: 1
+    engine:
+      "The McLaren 765LT has a 4.0 liter twin-turbocharged V8 engine that produces 765 horengine at 7,500 rpm and 800 Nm of torque at 800 rpm",
+    brandId: 1,
   },
   {
     model: "296 GT3",
@@ -153,6 +163,8 @@ const products = [
     price: 820000,
     stock: 3,
     year: 2022,
+    engine:
+      "The 296 GT3's engine is designed to work with the air around it to maximize grip and handling. It has 20% greater downforce than the 488 GT3, Ferrari's previous GT racer.",
     brandId: 3,
   },
   {
@@ -172,6 +184,8 @@ const products = [
     price: 559500,
     stock: 3,
     year: 1964,
+    engine:
+      "In late 1964, the Factory 1.6L Type 616/16 flat-four motor was manufactured with a 9.5:1 compression ratio. This engine boasts the highest output of the 356 pushrod engines, with a factory rating of 95hp at 5,800 rpm.",
     brandId: 2,
   },
   {
@@ -191,7 +205,9 @@ const products = [
     price: 1850000,
     stock: 3,
     year: 2025,
-    brandId: 2
+    engine:
+      "Each wheel of the Mission X is driven by its own motor. The Mission X has a power-to-weight ratio of roughly one horsepower per 2.2 pounds. This is comparable to cars designed to break world top speed records.",
+    brandId: 2,
   },
   {
     model: "Electric Phantom V",
@@ -209,6 +225,8 @@ const products = [
     price: 495000,
     stock: 7,
     year: 1959,
+    engine:
+      "The Rolls-Royce Phantom V is a large, four-door limousine that was produced from 1959 to 1968. The original Phantom V had a 6,230 cc V8 engine with twin SU carburettors and a 4-speed automatic transmission.",
     brandId: 4,
   },
   {
@@ -228,6 +246,8 @@ const products = [
     price: 1800000,
     stock: 7,
     year: 2024,
+    engine:
+      "The Rolls-Royce 103EX is an all-electric vehicle, so it doesn't have an engine under the hood. The front end of the 103EX is instead used for luggage space.",
     brandId: 4,
   },
   {
@@ -246,6 +266,8 @@ const products = [
     price: 30000000,
     stock: 3,
     year: 2022,
+    engine:
+      "The Rolls-Royce Boat Tail has a 6.75-liter twin-turbocharged V12 engine that produces 563 horsepower and 900 Nm of torque. It's a modified version of the engine found in the Rolls-Royce Phantom, and accelerates from 0 to 62 mph in around 5.3 seconds.",
     brandId: 4,
   },
 
@@ -266,7 +288,9 @@ const products = [
     price: 222500,
     stock: 9,
     year: 2024,
-    brandId: 2
+    engine:
+      "The Porsche 911 GT3 has a 4.0-liter, naturally aspirated, flat-six engine that produces 502 horsepower and 331 lb-ft of torque. It has a high-revving design, with a maximum power of 8,400 rpm and a rev limiter that cuts in at 9,000 rpm.",
+    brandId: 2,
   },
   {
     model: "100 Coupe S",
@@ -285,12 +309,14 @@ const products = [
     price: 37000,
     stock: 5,
     year: 1969,
+    engine:
+      "The Audi 100 Coupé S, a classic sports coupe from the 1970s, was powered by a reliable and efficient inline-four cylinder engine. This 1.8-liter engine, with its single overhead camshaft and carburetor setup, produced around 110-115 horsepower.",
     brandId: 6,
   },
   {
     model: "Spider RS",
     description:
-      "Pure GT engineering in a proudly open-top 2-seater. Puristic, unfiltered, genuine. The 718 Spyder RS is a mid-engine roadster that leaves worries behind in fractions of a second. For driving pleasure with a powerful sound that you can hear and feel immediately.",
+      "Pure GT engineering in a proudly open-top 2-seater. Puristic, unfiltered, genuine. The 718 Spyder RS is a mid-engine roadster that leaves worries behind in fractions of a second. For driving pleasure with engineful sound that you can hear and feel immediately.",
     imageProduct: "Porsche/porsche-spiderRS-6.jpg",
     image: "Porsche/porsche-spiderRS-1.jpg",
     photos: [
@@ -305,7 +331,9 @@ const products = [
     price: 2535000,
     stock: 10,
     year: 2024,
-    brandId: 2
+    engine:
+      "The Porsche 718 Spyder RS is powered by a high-performance, naturally aspirated 4.0-liter flat-six engine. This engine, shared with the iconic 911 GT3, delivers an impressive 500 horsepower and 331 lb-ft of torque. It's a high-revving engine, capable of reaching 9,000 RPM, providing a thrilling driving experience.",
+    brandId: 2,
   },
   {
     model: "Aventador Ultimae",
@@ -324,10 +352,10 @@ const products = [
     price: 860000,
     stock: 3,
     year: 2022,
-    power:
-      "The heart of the Aventador LP 780-4 Ultimae is the most powerful standard-production naturally aspirated V12 in Lamborghini history. This result was achieved by incorporating titanium intake valves that increase maximum power to 780 CV (574 kW) at 8,500 rpm.",
+    engine:
+      "The heart of the Aventador LP 780-4 Ultimae is the mosengineful standard-production naturally aspirated V12 in Lamborghini history. This result was achieved by incorporating titanium intake valves that increase maximuengine to 780 CV (574 kW) at 8,500 rpm.",
     brandId: 5,
-    },
+  },
   {
     model: "Revuelto",
     description:
@@ -345,8 +373,8 @@ const products = [
     price: 608000,
     stock: 7,
     year: 2023,
-    power:
-      "With a total output of 1,001 horsepower, the Revuelto is the most powerful Lamborghini ever made.",
+    engine:
+      "With a total output of 1,001 horengine, the Revuelto is the mosengineful Lamborghini ever made.",
     brandId: 5,
   },
   {
@@ -368,8 +396,8 @@ const products = [
     price: 2500000,
     stock: 7,
     year: 1967,
-    power:
-      "The Miura S has a 4-liter V12 engine with 370 horsepower at 7,500 rpm and 389 N·m of torque at 5,500 rpm.",
+    engine:
+      "The Miura S has a 4-liter V12 engine with 370 horengine at 7,500 rpm and 389 N·m of torque at 5,500 rpm.",
     brandId: 5,
   },
   {
@@ -392,8 +420,8 @@ const products = [
     price: 326500,
     stock: 10,
     year: 2018,
-    power: "The 720S Spider has a 710 bhp twin-turbo V8 engine that produces 770 Nm of torque.",
-    brandId: 1
+    engine: "The 720S Spider has a 710 bhp twin-turbo V8 engine that produces 770 Nm of torque.",
+    brandId: 1,
   },
   {
     model: "M6GT Coupé",
@@ -412,9 +440,9 @@ const products = [
     price: 230000,
     stock: 3,
     year: 1969,
-    power:
+    engine:
       "The 1969 McLaren M6GT has a Bartz-tuned Chevrolet engine that provides an estimated top speed of 165 miles per hour and a 0 to 100 miles per hour time of eight seconds.",
-      brandId: 1
+    brandId: 1,
   },
   {
     model: "458 Spider",
@@ -433,7 +461,9 @@ const products = [
     price: 640000,
     stock: 3,
     year: 2013,
-    brandId: 3
+    engine:
+      "The Ferrari 458 Spider is powered by a naturally aspirated 4.5-liter V8 engine, a masterpiece of engineering that delivers exhilarating performance. This engine produces an impressive 562 horsepower and 398 lb-ft of torque, propelling the car from 0 to 60 mph in just 3.4 seconds and reaching a top speed of 198 mph.",
+    brandId: 3,
   },
   {
     model: "Taycan Turbo",
@@ -452,7 +482,9 @@ const products = [
     price: 920000,
     stock: 3,
     year: 2022,
-    brandId: 2
+    engine:
+      "The Porsche Taycan Turbo is an all-electric sports car powered by two permanent magnet synchronous electric motors, one on each axle, providing all-wheel drive. This setup delivers impressive performance figures, with a combined output of up to 670 horsepower and 626 lb-ft of torque.",
+    brandId: 2,
   },
   {
     model: "PB18 eTron",
@@ -471,6 +503,8 @@ const products = [
     price: 920000,
     stock: 3,
     year: 2022,
+    engine:
+      "The Audi PB18 e-tron is an electric supercar concept that reimagines the future of high-performance vehicles. Unlike traditional internal combustion engines, the PB18 e-tron utilizes a dual-motor electric powertrain to power all four wheels.",
     brandId: 6,
   },
 ];
