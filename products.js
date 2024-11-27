@@ -21,7 +21,7 @@ const products = [
     brandId: 3,
   },
   {
-    model: "La Rose Noire Droptail",
+    model: "La Rose Noire",
     description:
       "A modern interpretation of the roadster body style, Droptail represents the next chapter of Rolls-Royce Coachbuild. La Rose Noire Droptail, embodies the allure of the Black Baccara rose.",
     imageProduct: "RollsRoyce/la-rose-noire-droptail/droptail-1.png",
@@ -210,7 +210,7 @@ const products = [
     brandId: 2,
   },
   {
-    model: "Electric Phantom V",
+    model: "Electric Phantom",
     description:
       "A luxury car known for its opulent interior, iconic design, and advanced technology.",
     imageProduct: "RollsRoyce/electric-phantom/electric-phantom-1.jpg",
