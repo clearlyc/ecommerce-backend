@@ -7,7 +7,7 @@
     
 //     return next();
 //   } else {
-//     return res.json("Wrong credentials");
+//     return res.json({msg: "Invalid credentials"});
 //   }
 // }
 

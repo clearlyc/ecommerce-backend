@@ -80,8 +80,8 @@ async function update(req, res) {
         {
           model,
           description,
-          image: "files.images.newFilename",
-          imageProduct: "files.images.newFilename",
+          image: files.images.newFilename,
+          imageProduct: files.images.newFilename,
           /* photos: [], */
           featured: featured,
           price: Number(price),
