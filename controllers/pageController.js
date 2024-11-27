@@ -5,9 +5,13 @@ async function resetDB(req, res) {
   try {
     await resetDataBase()
     await runAllSeeders()
-    return res.json({ msg: "Database restored"})
+    return res.json(
+      { msg: "Database restored"}
+    )
   } catch (err) {
-    return res.json({ error: "Something went wrong, try again later"})
+    return res.json(
+      { error: "Something went wrong, try again later"}
+    )
     console.log(err)
   }
 }
